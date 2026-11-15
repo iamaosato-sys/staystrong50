@@ -1,0 +1,13 @@
+{
+  "name": "StayStrong50 — Strength for Over 50s",
+  "short_name": "StayStrong50",
+  "description": "Free strength check and joint-friendly training plan for adults 50+.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf7f2",
+  "theme_color": "#0d5c5c",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StayStrong50 — Free Strength Check &amp; Plan for Over 50s</title>
+<meta name="description" content="StayStrong50 is a free strength check and training plan for adults 50+. Test your chair stands, arm curls and balance against published age ranges, then follow a joint-friendly plan with built-in recovery.">
+<meta name="theme-color" content="#0d5c5c">
+<link rel="canonical" href="https://staystrong50.vercel.app/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:title" content="StayStrong50 — Free Strength Check &amp; Plan for Over 50s">
+<meta property="og:description" content="Check your everyday strength and balance, then build it with a safe, steady plan. Free, no account.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://staystrong50.vercel.app/">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Google Analytics 4 Measurement ID. Leave blank to disable analytics entirely.
+  window.GA_ID = "";
+  // Google Search Console verification token (content value only).
+  window.GSC_TOKEN = "";
+</script>
+<script src="consent.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand"><img src="icon.svg" alt="" width="32" height="32"><span>StayStrong<b>50</b></span></div>
+  <nav aria-label="Main">
+    <button class="nav" data-view="today" aria-current="page">Today</button>
+    <button class="nav" data-view="check">Strength check</button>
+    <button class="nav" data-view="progress">Progress</button>
+    <button class="nav" data-view="swap">Exercise swaps</button>
+    <button class="nav" data-view="settings">Settings</button>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="timer" class="timer" hidden></div>
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+
+<footer class="foot">
+  <p>Free. No account. Your data stays on your device.</p>
+  <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a> · <button class="linkbtn" id="cookieSettings" type="button">Cookie settings</button></p>
+  <p class="small">StayStrong50 by Entwisle Fitness, Fylde Coast, Lancashire, UK. General fitness information, not medical advice. Check with your GP before starting if you have a health condition.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+  }
+</script>
+</body>
+</html>

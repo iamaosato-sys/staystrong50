@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://staystrong50.vercel.app/sitemap.xml
